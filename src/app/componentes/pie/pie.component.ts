@@ -20,4 +20,12 @@ export class PieComponent {
 	public chartHovered(e: any): void {
 		console.log(e);
 	}
+
+	public actualizar() {
+		this.pieChartData = [this.aleatorio(), this.aleatorio(), this.aleatorio()];
+	}
+
+	public aleatorio() {
+		return Math.floor(Math.random() * 100);
+	}
 }
